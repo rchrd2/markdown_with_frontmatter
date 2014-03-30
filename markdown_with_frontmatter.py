@@ -23,7 +23,7 @@ def get_html_and_meta(md_string):
     ... Test test test
     ... 
     ... ''')
-    ({'tags': 'one, two, three'}, '# This is some markdown\\nTest test test\\n\\n')
+    ({'tags': 'one, two, three'}, u'<h1>This is some markdown</h1>\\n<p>Test test test</p>')
     
     """
     # parse out front matter
@@ -34,7 +34,7 @@ def get_html_and_meta(md_string):
             meta = yaml.load(m.group(1))
         except:
             meta = {}
-        return meta, m.group(2)
+        return meta, md.convert(m.group(2))
     else:
         return {}, md_string
     
