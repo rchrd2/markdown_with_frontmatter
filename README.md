@@ -36,3 +36,8 @@ tags:
 """
 
 ```
+
+
+Dependencies:
+- PyYaml
+- markdown
