@@ -36,7 +36,7 @@ def get_html_and_meta(md_string):
             meta = {}
         return meta, md.convert(m.group(2))
     else:
-        return {}, md_string
+        return {}, md.convert(md_string)
     
 def create_markdown_with_meta(meta, md_string):
     """
