@@ -18,7 +18,7 @@ Get meta and html:
 ... Test test test
 ... 
 ... ''')
-({'tags': 'one, two, three'}, '# This is some markdown\\nTest test test\\n\\n')
+({'tags': 'one, two, three'}, '<h1>This is some markdown</h1>\\n<p>Test test test</p>'')
 ```
 
 Create a markdown document with YAML frontmatter.
