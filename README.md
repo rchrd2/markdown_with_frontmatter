@@ -41,3 +41,8 @@ tags:
 Dependencies:
 - PyYaml
 - markdown
+
+
+Comparison:
+- https://github.com/eyeseast/python-frontmatter 
+   - This project is probably preferred. I came out after I wrote this library. Of note, it does not render markdown.
